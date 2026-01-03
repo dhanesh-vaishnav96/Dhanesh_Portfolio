@@ -1,0 +1,1130 @@
+
+                                 /* ---------- NAVBAR GLASS EFFECT ---------- */
+.nav-glass {
+    background: rgba(5, 5, 5, 0.8);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* ---------- LOGO ---------- */
+/* ---------- LOGO (ROTATE ANIMATION) ---------- */
+.logo-box {
+    width: 45px;
+    height: 46px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #a855f7, #ec4899);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.6s ease, box-shadow 0.4s ease;
+}
+
+.logo-box:hover {
+    transform: rotate(360deg);
+    box-shadow: 0 0 22px rgba(168, 85, 247, 0.45);
+}
+
+
+.logo-initials {
+    color: #fff;
+    font-weight: 800;
+    font-size: 1.25rem;
+}
+
+/* ---------- LOGO TEXT ---------- */
+.logo-text {
+    font-size: 1.5rem;
+    font-weight: 800;
+    letter-spacing: -0.05em;
+    text-transform: uppercase;
+    background: linear-gradient(to right, #ffffff, #9ca3af);
+    background-clip: text;              /* Standard */
+    -webkit-background-clip: text;      /* Safari / Chrome */
+    color: transparent;                 /* Standard */
+    -webkit-text-fill-color: transparent;
+}
+
+/* ---------- NAV LINKS ---------- */
+.nav-link {
+    position: relative;
+    padding-bottom: 4px;
+    transition: color 0.3s ease;
+}
+
+/* Underline animation */
+.nav-link::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    left: 50%;
+    bottom: 0;
+    background: #f154a3;
+    /* background: #48ec7f; */
+    transform: translateX(-50%);
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.nav-link:hover {
+    color: #f154a3;
+}
+/*.................................. */
+        /* Font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #050505;
+    color: #e5e7eb;
+}
+
+/* Gradient Name Text */
+.gradient-text {
+    background: linear-gradient(90deg, #ec4899, #8b5cf6, #3b82f6);
+
+    background-clip: text;              /* Standard */
+    -webkit-background-clip: text;      /* Safari / Chrome */
+
+    color: transparent;                 /* Standard */
+    -webkit-text-fill-color: transparent;
+}
+
+
+/* Typing Animation */
+.typing-container {
+    position: relative;
+    display: inline-block;
+    white-space: nowrap;
+    font-weight: 600;
+}
+
+.typing-text {
+    position: relative;
+    display: inline-block;
+}
+
+/* Cursor + mask */
+.typing-text::after {
+    content: "";
+    position: absolute;
+    right: -3px;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: #050505; /* same as body background */
+    border-left: 3px solid #ec4899;
+
+    animation: typing-mask 6s steps(60) infinite,
+               cursor-blink 0.7s infinite;
+}
+
+/* Mask animation (reveals text) */
+@keyframes typing-mask {
+    0%, 10% {
+        width: 100%;
+    }
+    45%, 55% {
+        width: 0;
+    }
+    90%, 100% {
+        width: 100%;
+    }
+}
+/* Cursor blink */
+@keyframes cursor-blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+/* ---------- HOME IMAGE GLOW ---------- */
+.profile-glow {
+    box-shadow:
+        0 0 25px rgba(236, 72, 153, 0.35),
+        0 0 70px rgba(139, 92, 246, 0.35),
+        inset 0 0 20px rgba(255, 255, 255, 0.04);
+    transition: all 0.4s ease;
+}
+
+.profile-glow:hover {
+    box-shadow:
+        0 0 40px rgba(236, 72, 155, 0.6),
+        0 0 110px rgba(139, 92, 249, 0.6);
+    transform: scale(1.03);
+}
+
+@keyframes typing {
+    0%, 10% { width: 0; }
+    45%, 55% { width: 48.9ch; }
+    90%, 100% { width: 0; }
+}
+
+@keyframes blink {
+    50% { border-color: transparent; }
+}
+
+/*.................................. */
+
+                                        /* ---------- ABOUT CARD BASE ---------- */
+.about-card {
+    background: linear-gradient(
+        145deg,
+        rgba(15, 15, 25, 0.95),
+        rgba(5, 5, 10, 0.95)
+    );
+    border: 1px solid rgba(236, 72, 153, 0.35);
+    backdrop-filter: blur(10px);
+}
+
+/* ---------- STRONG SHADOW + GLOW ---------- */
+.about-glow {
+    box-shadow:
+        0 0 25px rgba(236, 72, 153, 0.25),
+        0 0 60px rgba(139, 92, 246, 0.25),
+        inset 0 0 90px rgba(255, 255, 255, 0.03);
+    transition: all 0.4s ease;
+}
+
+.about-glow:hover {
+    box-shadow:
+        0 0 35px rgba(236, 72, 153, 0.45),
+        0 0 90px rgba(139, 92, 246, 0.45);
+    transform: translateY(-4px);
+}
+
+/* ---------- ABOUT TEXT ---------- */
+.about-text {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 1.05rem;
+    line-height: 1.8;
+    letter-spacing: 0.3px;
+}
+
+/* ---------- HIGHLIGHT WORDS ---------- */
+.highlight-text {
+    font-weight: 800;
+    font-style: italic;
+    color: #f472b6;
+    text-shadow: 0 0 12px rgba(236, 72, 153, 0.6);
+}
+
+
+                        /* ---------- EDUCATION CARD ---------- */
+.edu-card {
+    background: rgba(17, 24, 39, 0.65);
+    border-left: 4px solid #a855f7;
+    border-radius: 18px;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+/* Right side meta */
+.edu-meta {
+    text-align: right;
+    min-width: 160px;
+}
+
+/* Hover glow effect */
+.hover-glow {
+    transition: all 0.35s ease;
+}
+
+.hover-glow:hover {
+    box-shadow: 0 0 35px rgba(168, 85, 247, 0.35);
+    transform: translateY(-4px);
+}
+
+/*................................................... */
+/* ---------- TECH SECTION WRAPPER ---------- */
+/* ---------- TECH SECTION WRAPPER (PINK GLOW) ---------- */
+.tech-wrapper {
+    background: rgba(0, 0, 0, 0.88);
+    border: 2px solid rgba(236, 72, 153, 0.65);
+    border-radius: 18px;
+
+    box-shadow:
+        0 0 25px rgba(236, 72, 153, 0.35),
+        0 0 70px rgba(139, 92, 246, 0.25),
+        inset 0 0 20px rgba(255, 255, 255, 0.03);
+
+    transition: all 0.4s ease;
+}
+
+/* Hover glow */
+.tech-wrapper:hover {
+    box-shadow:
+        0 0 40px rgba(236, 72, 153, 0.6),
+        0 0 110px rgba(139, 92, 246, 0.45);
+}
+
+
+/* ---------- CATEGORY LABEL ---------- */
+.tech-label {
+    display: inline-block;
+    padding: 6px 16px;
+    background: #000;
+    /* color: #ec4899; */
+    color: rgba(20, 245, 102, 0.6);
+    font-weight: 700;
+    font-size: 0.85rem;
+    border-radius: 6px;
+    margin-bottom: 16px;
+
+    box-shadow: 0 0 15px rgba(105, 236, 72, 0.6);
+}
+
+
+/* ---------- GRID ---------- */
+.tech-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 28px;
+}
+
+/* ---------- TECH CARD ---------- */
+.tech-card {
+    background: rgba(15, 15, 15, 0.9);
+    border-radius: 14px;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    transition: all 0.35s ease;
+}
+
+.tech-card img {
+    width: 46px;
+    height: 46px;
+    margin: 0 auto 10px;
+}
+
+.tech-card span {
+    color: #ffffff;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+}
+
+/* ---------- HOVER EFFECT ---------- */
+.tech-card:hover {
+    transform: translateY(-6px) scale(1.05);
+    box-shadow: 0 0 30px rgba(34, 197, 94, 0.45);
+    border-color: rgba(34, 197, 94, 0.6);
+}
+
+/*................................................... */
+                                            /* FEATURED PROJECTS — CSS */
+/* ================= FEATURED PROJECTS ================= */
+
+/* ---------- GRID (STRICT & SYSTEMATIC) ---------- */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 320px);
+    gap: 75px;
+    justify-content: start;
+}
+
+/* ---------- PROJECT CARD ---------- */
+.project-card {
+    background: rgba(10, 10, 20, 0.95);
+    border-radius: 18px;
+    overflow: hidden;
+
+    border: 1px solid rgba(236, 72, 153, 0.35);
+    box-shadow:
+        0 0 20px rgba(236, 72, 153, 0.25),
+        0 0 55px rgba(139, 92, 246, 0.2);
+
+    transition: all 0.35s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+    box-shadow:
+        0 0 35px rgba(236, 72, 153, 0.55),
+        0 0 110px rgba(139, 92, 246, 0.45);
+}
+
+/* ---------- IMAGE ---------- */
+.project-image {
+    position: relative;
+    height: 220px;
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;   
+    object-fit: cover;
+    opacity: 0.95;
+}
+
+/* ---------- TAG ---------- */
+.project-tag {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+
+    background: rgba(0, 0, 0, 0.85);
+    color: #22c55e;
+    font-size: 0.65rem;
+    padding: 4px 8px;
+    border-radius: 6px;
+
+    border: 1px solid rgba(34, 197, 94, 0.4);
+}
+
+/* ---------- CONTENT ---------- */
+.project-content {
+    padding: 18px;
+}
+
+.project-content h3 {
+    color: #ec4899;
+    font-size: 1rem;
+    font-weight: 800;
+    margin-bottom: 6px;
+}
+
+.project-content p {
+    color: #9ca3af;
+    font-size: 0.85rem;
+    line-height: 1.6;
+    margin-bottom: 12px;
+}
+
+/* ---------- TECH STACK ---------- */
+.project-tech {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-bottom: 16px;
+}
+
+.project-tech span {
+    font-size: 0.65rem;
+    padding: 4px 8px;
+    background: rgba(255, 255, 255, 0.05);
+    color: #d1d5db;
+    border-radius: 6px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* ---------- ACTIONS ---------- */
+.project-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-outline {
+    flex: 1;
+    text-align: center;
+    padding: 8px;
+    font-size: 0.8rem;
+    border-radius: 8px;
+
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    color: #d1d5db;
+    transition: all 0.3s ease;
+}
+
+.btn-outline:hover {
+    border-color: #ec4899;
+    color: #ec4899;
+}
+
+.btn-primary {
+    flex: 1;
+    text-align: center;
+    padding: 8px;
+    font-size: 0.8rem;
+    border-radius: 8px;
+
+    background: rgba(236, 72, 153, 0.15);
+    border: 1px solid #ec4899;
+    color: #ec4899;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background: #ec4899;
+    color: #ffffff;
+}
+
+                                            /* FEATURED PROJECTS END — CSS */
+ /*................................................... */
+                                            /* Certification  start — CSS */
+/* ================= CERTIFICATION SECTION ================= */
+
+/* ---------- GRID (STRICT & SYSTEMATIC) ---------- */
+.cert-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 260px);
+    gap: 32px;
+    justify-content: start;
+}
+
+/* ---------- CERT CARD ---------- */
+.cert-card {
+    position: relative;
+    width: 260px;
+    height: 210px;
+
+    background: rgba(8, 8, 16, 0.95);
+    border-radius: 14px;
+
+    border: 1px solid rgba(236, 72, 153, 0.35);
+    box-shadow:
+        0 0 18px rgba(236, 72, 153, 0.25),
+        0 0 45px rgba(139, 92, 246, 0.2);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    transition: all 0.3s ease;
+}
+
+.cert-card:hover {
+    transform: translateY(-6px);
+    box-shadow:
+        0 0 30px rgba(236, 72, 153, 0.55),
+        0 0 90px rgba(139, 92, 246, 0.4);
+}
+
+/* ---------- VERIFIED TAG ---------- */
+.cert-tag {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+
+    background: rgba(0, 0, 0, 0.85);
+    color: #22c55e;
+    font-size: 0.65rem;
+    padding: 4px 8px;
+    border-radius: 6px;
+
+    border: 1px solid rgba(34, 197, 94, 0.4);
+}
+
+/* ---------- CONTENT ---------- */
+.cert-content {
+    padding: 48px 14px 14px;
+}
+
+.cert-content h3 {
+    color: #ec4899;
+    font-size: 0.9rem;
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+
+.cert-content p {
+    color: #9ca3af;
+    font-size: 0.75rem;
+    line-height: 1.4;
+}
+
+/* ---------- BOTTOM RIBBON ---------- */
+.cert-ribbon {
+    background: #000;
+    color: #ec4899;
+    font-size: 0.65rem;
+    font-weight: 700;
+    text-align: center;
+    padding: 6px;
+    border-top: 1px solid rgba(236, 72, 153, 0.35);
+}
+
+/* ---------- VIEW CERTIFICATE BUTTON ---------- */
+.cert-mini-btn {
+    margin: 0 14px 12px auto;
+    width: fit-content;
+
+    padding: 4px 10px;
+    font-size: 0.6rem;
+    font-weight: 700;
+    letter-spacing: 0.6px;
+
+    color: #ec4899;
+    background: rgba(236, 72, 153, 0.12);
+    border: 1px solid rgba(236, 72, 153, 0.5);
+    border-radius: 999px;
+
+    text-decoration: none;
+    transition: all 0.25s ease;
+}
+
+.cert-mini-btn:hover {
+    background: #ec4899;
+    color: #ffffff;
+    box-shadow: 0 0 16px rgba(236, 72, 153, 0.7);
+    transform: translateY(-1px);
+}
+
+
+                                            /* Certification  END — CSS */
+        /*................................................... */
+/* ================= CONTACT SECTION ================= */
+/* ---------- CENTER WRAPPER ---------- */
+.contact-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+/* ---------- CARD ---------- */
+.contact-card {
+    width: 760px;
+    padding: 67px;
+    border-radius: 20px;
+
+    background: linear-gradient(
+        145deg,
+        rgba(15, 15, 25, 0.95),
+        rgba(5, 5, 10, 0.95)
+    );
+
+    border: 1px solid rgba(236, 72, 153, 0.35);
+
+    box-shadow:
+        0 0 25px rgba(236, 72, 153, 0.25),
+        0 0 70px rgba(139, 92, 246, 0.25);
+
+    transition: all 0.4s ease;
+}
+
+/* SAME GLOW AS ABOUT */
+.contact-card:hover {
+    box-shadow:
+        0 0 40px rgba(236, 72, 153, 0.6),
+        0 0 110px rgba(139, 92, 246, 0.45);
+    transform: translateY(-4px);
+}
+
+/* ---------- FORM ---------- */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    background: rgba(0, 0, 0, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 0.85rem;
+    color: #ffffff;
+    outline: none;
+    resize: none;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #9ca3af;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #ec4899;
+    box-shadow: 0 0 12px rgba(236, 72, 153, 0.4);
+}
+
+/* ---------- BUTTON (UNCHANGED BACKGROUND) ---------- */
+.contact-btn {
+    margin-top: 6px;
+    padding: 12px;
+    border-radius: 999px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: #ffffff;
+
+    background: linear-gradient(
+        90deg,
+        #a855f7,
+        #ec4899,
+        #06b6d4
+    );
+
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.contact-btn:hover {
+    transform: translateY(-2px);
+    box-shadow:
+        0 0 25px rgba(236, 72, 153, 0.6),
+        0 0 60px rgba(139, 92, 246, 0.5);
+}
+
+/* ---------- ICONS ---------- */
+/* ---------- ICON CONTAINER ---------- */
+.contact-icons {
+    display: flex;
+    justify-content: center;
+    gap: 22px;
+    margin-top: 24px;
+}
+
+/* ---------- BASE ICON ---------- */
+.contact-icons .icon {
+    width: 42px;
+    height: 42px;
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(0, 0, 0, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+
+    transition: all 0.45s ease;
+}
+
+.contact-icons svg {
+    width: 22px;
+    height: 22px;
+    fill: none;
+    stroke-width: 2;
+}
+
+/* ---------- INDIVIDUAL COLORS ---------- */
+.icon.email svg {
+    stroke: #22c55e;
+}
+
+.icon.github svg {
+    fill: #a855f7;
+}
+
+.icon.linkedin svg {
+    fill: #38bdf8;
+}
+
+.icon.instagram svg {
+    stroke: #ec4899;
+}
+
+/* ---------- HOVER ANIMATION ---------- */
+.contact-icons .icon:hover {
+    transform: rotate(360deg) scale(1.2);
+    box-shadow: 0 0 20px currentColor;
+}
+
+/* ---------- COLOR GLOW ---------- */
+.icon.email:hover {
+    color: #22c55e;
+}
+
+.icon.github:hover {
+    color: #a855f7;
+}
+
+.icon.linkedin:hover {
+    color: #38bdf8;
+}
+
+.icon.instagram:hover {
+    color: #ec4899;
+}
+
+/* ================= CONTACT SECTION end ================= */
+
+/* ================= RESUME SECTION ================= */
+.resume-section {
+    padding: 80px 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* ---------- HEADER (MINIMAL) ---------- */
+.resume-header-minimal {
+    width: 100%;
+    height: 56px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 16px;
+}
+
+/* Left label */
+.resume-label {
+    color: #ec4899;
+
+    font-size: 2.0rem;
+    font-weight: 800;
+
+    padding: 10px 22px;
+    margin-left: 12px;
+
+}
+
+/* Download button */
+.resume-download-btn {
+    background: #ec4899;
+    color: #ffffff;
+
+    font-size: 0.75rem;
+    font-weight: 700;
+
+    padding: 8px 14px;
+    border-radius: 6px;
+    text-decoration: none;
+
+    transition: opacity 0.3s ease;
+}
+
+.resume-download-btn:hover {
+    opacity: 0.85;
+    background: #e702dc;
+    color: whitesmoke;
+}
+
+/* ---------- BODY ---------- */
+.resume-body {
+    display: flex;
+    justify-content: center;
+    margin-top: 28px;
+}
+
+/* ---------- RESUME CARD ---------- */
+.resume-card {
+    width: 850px;
+    height: 950px;
+
+    background: #000000;
+    border-radius: 8px;
+    padding: 12px;
+}
+
+/* ---------- PDF ---------- */
+.resume-pdf {
+    width: 100%;
+    height: 100%;
+    border: none;
+    background: #ffffff;
+    border-radius: 6px;
+}
+
+
+                /* ================= FOOTER ================= */
+
+.site-footer {
+    padding: 30px 20px;
+    text-align: center;
+    background: #000000;
+}
+
+/* Main text */
+.footer-main {
+    color: #ffffff;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+}
+
+/* Highlight name */
+.footer-main span {
+    color: #ec4899;
+}
+
+/* Sub text */
+.footer-sub {
+    font-size: 0.75rem;
+    color: #94a3b8;
+}
+
+/* Heart */
+.footer-sub .heart {
+    color: #22c55e;
+    font-weight: 700;
+}
+/* =====================================================
+   GLOBAL MOBILE SAFETY (CRITICAL)
+===================================================== */
+html, body {
+    overflow-x: hidden !important;
+}
+
+/* =====================================================
+   HERO TEXT FIX (260px SAFE)
+===================================================== */
+#home h3 {
+    font-size: clamp(0.85rem, 4vw, 1.75rem);
+    line-height: 1.2;
+}
+
+#home h1 {
+    font-size: clamp(2rem, 9vw, 6rem);
+    line-height: 1.05;
+    word-break: break-word;
+}
+
+/* Typing text — mobile-safe */
+.typing-container {
+    font-size: clamp(0.75rem, 3.8vw, 1.5rem);
+    line-height: 1.25;
+    white-space: normal;
+    overflow: hidden;
+}
+
+@media (max-width: 1023px) {
+    .typing-text::after {
+        display: none;
+    }
+}
+
+
+/* Reduce typing cursor thickness on mobile */
+@media (max-width: 639px) {
+    .typing-container {
+        border-right-width: 2px;
+    }
+}
+
+/* =====================================================
+   PROFILE IMAGE — NEVER HIDE
+===================================================== */
+@media (max-width: 640px) {
+    #home {
+        gap: 2.5rem;
+    }
+
+    .profile-glow {
+        width: clamp(140px, 55vw, 260px);
+        height: clamp(140px, 55vw, 260px);
+        margin: 0 auto;
+    }
+}
+@media (max-width: 1023px) {
+    #home {
+        gap: 2.5rem;
+    }
+
+    .profile-glow {
+        width: clamp(200px, 75vw, 365px);
+        height: clamp(200px, 75vw, 365px);
+        margin: 0 auto;
+    }
+}
+
+/* =====================================================
+   NAVBAR MOBILE FIX
+===================================================== */
+@media (max-width: 639px) {
+    nav.nav-glass {
+        padding: 0.75rem 1rem;
+    }
+
+    .logo-text {
+        font-size: 1.1rem;
+    }
+
+    .logo-box {
+        width: 38px;
+        height: 38px;
+    }
+}
+
+/* =====================================================
+   EDUCATION LOCATION TEXT (ALLOWABLE HIDE)
+===================================================== */
+@media (max-width: 359px) {
+    .edu-meta p:last-child {
+        display: none;
+    }
+}
+
+/* =====================================================
+   TECH ICON SIZE & GRID FIX
+===================================================== */
+@media (max-width: 639px) {
+    .tech-grid {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        gap: 18px;
+    }
+
+    .tech-card img {
+        width: 34px;
+        height: 34px;
+    }
+
+    .tech-card span {
+        font-size: 0.75rem;
+    }
+}
+
+/* =====================================================
+   PROJECT GRID RESPONSIVE FIX
+===================================================== */
+@media (max-width: 1023px) {
+    .projects-grid {
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        justify-content: center;
+    }
+}
+
+/* =====================================================
+   CERTIFICATION GRID RESPONSIVE FIX
+===================================================== */
+@media (max-width: 1023px) {
+    .cert-grid {
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        justify-content: center;
+    }
+
+    .cert-card {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* =====================================================
+   MOBILE GLOW PRESERVATION (TAP FRIENDLY)
+===================================================== */
+@media (hover: none) {
+    .project-card,
+    .cert-card,
+    .tech-card {
+        box-shadow:
+            0 0 30px rgba(236, 72, 153, 0.45),
+            0 0 80px rgba(139, 92, 246, 0.35);
+    }
+}
+
+/* =====================================================
+   CONTACT FORM CENTERING
+===================================================== */
+@media (max-width: 639px) {
+    .contact-card {
+        padding: 32px 20px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        width: 100%;
+    }
+}
+
+/* =====================================================
+   RESUME RESPONSIVENESS
+===================================================== */
+@media (max-width: 639px) {
+    .resume-label {
+        font-size: 1.4rem;
+    }
+
+    .resume-download-btn {
+        font-size: 0.65rem;
+        padding: 6px 10px;
+    }
+
+    .resume-card {
+        height: 70vh;
+    }
+}
+
+/* =====================================================
+   EDUCATION META — NEVER HIDE (260px SAFE)
+===================================================== */
+
+@media (max-width: 400px) {
+    .edu-card {
+        flex-direction: column;     /* stack content */
+        gap: 1rem;
+    }
+
+    .edu-meta {
+        text-align: left;
+        min-width: auto;
+        width: 100%;
+    }
+
+    .edu-meta p {
+        white-space: normal;
+    }
+}
+/* =====================================================
+   RESPONSIVE ROLE TEXT BEHAVIOR
+===================================================== */
+
+/* Default: Desktop */
+.desktop-text {
+    display: inline;
+}
+
+.mobile-text {
+    display: none;
+}
+
+/* =====================================================
+   ROLE TEXT — HARD DESKTOP / MOBILE SEPARATION
+===================================================== */
+
+/* ===== DESKTOP (DEFAULT) ===== */
+.role-desktop {
+    display: inline;
+    white-space: nowrap;
+}
+
+.role-mobile {
+    display: none;
+}
+
+/* Keep animation ONLY on desktop */
+@media (min-width: 1024px) {
+    .typing-container {
+        display: inline-block;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+}
+
+/* Disable typing where width is not enough */
+@media (max-width: 1279px) {
+    .typing-container {
+        animation: none !important;
+        border-right: none !important;
+        white-space: normal !important;
+    }
+}
+
+
+/* ===== RESPONSIVE (TABLET + MOBILE) ===== */
+@media (max-width: 1023px) {
+    .role-desktop {
+        display: none;
+    }
+
+    .role-mobile {
+        display: block;
+        font-size: clamp(0.9rem, 3.6vw, 1.25rem);
+        line-height: 1.4;
+        white-space: normal;
+    }
+
+    /* Kill typing effect ONLY here */
+    .typing-container {
+        animation: none !important;
+        border-right: none !important;
+        white-space: normal !important;
+    }
+}
+
+@keyframes typing {
+    0%, 10% { width: 0; }
+    45%, 55% { width: 48.9ch; }
+    90%, 100% { width: 0; }
+}
+
