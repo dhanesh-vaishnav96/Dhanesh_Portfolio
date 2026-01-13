@@ -25,3 +25,11 @@ async def add_user_detail(name:str = Form(...), email:str = Form(...), msg:str =
         "msg":msg
     })
     return RedirectResponse("/#contact",status_code=303)
+
+#  THIS keeps Render awake
+@app.get("/health")
+def health():
+    return {"status": "ok"}
+
+
+
